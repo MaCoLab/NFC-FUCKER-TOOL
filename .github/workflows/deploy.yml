@@ -16,11 +16,11 @@ jobs:
         with:
           node-version: 18
 
-- name: Install dependencies
-  run: |
-    npm cache clean --force
-    rm -rf node_modules
-    npm ci
+      - name: Install dependencies
+        run: |
+          npm cache clean --force
+          rm -rf node_modules package-lock.json
+          npm install
 
       - name: Build
         run: npm run build
