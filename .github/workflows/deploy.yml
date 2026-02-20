@@ -16,9 +16,8 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install dependencies
+      - name: 🔥 Clean install (fresh lockfile)
         run: |
-          npm cache clean --force
           rm -rf node_modules package-lock.json
           npm install
 
