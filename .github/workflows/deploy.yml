@@ -14,13 +14,13 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20  # Passa a Node.js 20 LTS
 
-      - name: Clean install and rebuild
+      - name: Install dependencies and rebuild
         run: |
           rm -rf node_modules package-lock.json
           npm install
-          npm rebuild @tailwindcss/oxide
+          npm rebuild  # Ricostruisce tutti i moduli nativi
 
       - name: Build
         run: npm run build
