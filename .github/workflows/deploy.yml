@@ -16,10 +16,11 @@ jobs:
         with:
           node-version: 18
 
-      - name: 🔥 Clean install (fresh lockfile)
+      - name: Clean install and rebuild
         run: |
           rm -rf node_modules package-lock.json
           npm install
+          npm rebuild @tailwindcss/oxide
 
       - name: Build
         run: npm run build
