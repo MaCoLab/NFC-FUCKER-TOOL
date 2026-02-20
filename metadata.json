@@ -1,0 +1,5 @@
+{
+  "name": "NFC FUCKER Web Flasher",
+  "description": "Hacker-style web flasher for ESP32-C3 devices.",
+  "requestFramePermissions": []
+}
