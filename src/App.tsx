@@ -234,9 +234,9 @@ export default function App() {
                     <div className="space-y-3 font-mono text-[10px] leading-relaxed text-blue-200/60">
                       <p>Se il dispositivo non viene rilevato su Mac:</p>
                       <ul className="space-y-2 list-none">
-                        <li className="flex gap-2"><span className="text-blue-500">●</span> <span>Usa un cavo dati da USB-A a USB-C con adattatore.</span></li>
+                        <li className="flex gap-2"><span className="text-blue-500">●</span> <span>Usa un cavo dati da <span className="text-blue-400">USB-A</span> a <span className="text-blue-400">USB-C</span> con adattatore.</span></li>
                         <li className="flex gap-2"><span className="text-blue-500">●</span> <span>macOS Ventura o superiori: Consenti accessori USB in <span className="text-blue-400">Privacy e Sicurezza</span>.</span></li>
-                      <li className="flex gap-2"><span className="text-blue-500">●</span> <span>Se necessario, scarica ed installa i driver <span className="text-blue-400">CH340</span> per il chip seriale da <a href="https://github.com/adrianmihalko/ch340g-ch34g-ch34x-mac-os-x-driver">QUI</a> .</span></li>
+                      <li className="flex gap-2"><span className="text-blue-500">●</span> <span>Se necessario, scarica ed installa i driver <span className="text-blue-400">CH340</span> per il chip seriale da <a href="https://github.com/adrianmihalko/ch340g-ch34g-ch34x-mac-os-x-driver"><span className="text-blue-400">QUI</span></a> .</span></li>
                       </ul>
                     </div>
                   </div>
