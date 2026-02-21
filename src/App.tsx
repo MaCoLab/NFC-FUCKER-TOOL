@@ -316,12 +316,12 @@ export default function App() {
                   <div className="bg-cyan-950/10 p-6 md:p-8 flex-1 flex flex-col relative overflow-hidden">
                     <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-500/5 rounded-full blur-[80px] pointer-events-none"></div>
                     
-                    <h3 className="text-sm font-bold text-cyan-400 mb-6 flex items-center gap-2 uppercase tracking-widest border-b border-cyan-900/50 pb-3">
+                    <h3 className="text-sm font-bold text-cyan-400 mb-4 flex items-center gap-2 uppercase tracking-widest border-b border-cyan-900/50 pb-3">
                       <HardDrive size={18} />
                       Payload_Configuration
                     </h3>
                     
-                    <div className="space-y-4 mb-8 flex-1">
+                    <div className="space-y-4 mb-4 flex-none">
                       <label 
                         className={`block cursor-pointer border p-4 transition-all duration-300 relative overflow-hidden ${
                           firmware === 'senza' 
