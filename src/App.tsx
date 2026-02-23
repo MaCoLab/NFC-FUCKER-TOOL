@@ -9,6 +9,7 @@ const PASSWORD = "Maco2025";
 export default function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [activeView, setActiveView] = useState<'flasher' | 'calculator' | 'calculator_microel'>('flasher');
+  const [hasAcceptedInfo, setHasAcceptedInfo] = useState(false);
   const [passwordInput, setPasswordInput] = useState('');
   const [error, setError] = useState('');
   const [firmware, setFirmware] = useState('senza');
@@ -444,8 +445,33 @@ export default function App() {
                         In attesa di connessione del dispositivo
                         <span className="w-8 h-px bg-cyan-900"></span>
                       </div>
+
+                      <div className="mb-6 w-full max-w-sm mx-auto p-4 border border-cyan-900/30 bg-cyan-950/5 text-center">
+                        <p className="text-[10px] text-cyan-600 uppercase tracking-widest mb-3">
+                          Per procedere è necessario consultare l'informativa
+                        </p>
+                        <a 
+                          href="https://github.com/MaCoLab/NFC-FUCKER-TOOL/blob/main/README.md" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-cyan-400 hover:text-cyan-300 text-xs font-bold underline tracking-widest block mb-4"
+                        >
+                          LEGGI INFORMATIVA
+                        </a>
+                        <button 
+                          onClick={() => setHasAcceptedInfo(!hasAcceptedInfo)}
+                          className={`w-full py-2 px-4 border text-[10px] font-bold uppercase tracking-[0.2em] transition-all flex items-center justify-center gap-2 ${
+                            hasAcceptedInfo 
+                            ? 'bg-cyan-500/20 border-cyan-500 text-cyan-300 shadow-[0_0_10px_rgba(6,182,212,0.2)]' 
+                            : 'bg-transparent border-cyan-900 text-cyan-700 hover:border-cyan-700'
+                          }`}
+                        >
+                          {hasAcceptedInfo ? <CheckCircle2 size={12} /> : null}
+                          HO LETTO
+                        </button>
+                      </div>
                       
-                      <div className="relative z-10 w-full flex justify-center">
+                      <div className={`relative z-10 w-full flex justify-center transition-all duration-500 ${!hasAcceptedInfo ? 'opacity-20 grayscale pointer-events-none' : 'opacity-100'}`}>
                         {/* @ts-ignore */}
                         <esp-web-install-button 
                           manifest={firmware === 'senza' ? 'manifest_senza.json' : 'manifest_con.json'}
@@ -454,7 +480,7 @@ export default function App() {
                     </div>
 
                     {/* Simulated Terminal */}
-                    <div className="mt-6 bg-black/80 border border-cyan-900/30 p-3 font-mono text-[9px] text-cyan-700/60 h-24 overflow-hidden relative">
+                    <div className="mt-6 bg-black/80 border border-cyan-900/30 p-3 font-mono text-[9px] text-cyan-700/60 h-40 overflow-hidden relative">
                       <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.1)_50%)] bg-[length:100%_2px] pointer-events-none"></div>
                       <div className="animate-pulse mb-1 text-cyan-500/40">&gt;&gt; SYSTEM_READY: Awaiting serial handshake...</div>
                       <div>[ATTENZIONE!]Si ricorda che questo progetto ha il solo scopo informatico ed educativo, decliniamo qualsiasi responsabilità dall'uso illecito che ne farete.</div>
