@@ -175,7 +175,7 @@ export default function MicroelCalculator({ onBack }: { onBack: () => void }) {
                     onClick={onBack}
                     className="flex items-center gap-2 text-cyan-500 hover:text-cyan-300 transition-colors text-sm uppercase tracking-widest"
                 >
-                    <ArrowLeft size={16} /> Torna al Menu
+                    <ArrowLeft size={16} /> Torna al Flasher
                 </button>
                 <div className="text-[10px] text-cyan-700 uppercase tracking-widest">
                     Microel_Key_Gen_v1.0
