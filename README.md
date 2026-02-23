@@ -22,7 +22,7 @@ La password per accedere all'interfaccia non è pubblica.
 
 # AVVISO IMPORTANTE (INFORMATIVA)
 
-Questo strumento di calcolo delle chiavi è fornito ESCLUSIVAMENTE A SCOPO INFORMATIVO ED EDUCATIVO.
+Questo strumento di calcolo delle chiavi, e l'intero progetto (firmware incluso), è fornito ESCLUSIVAMENTE A SCOPO INFORMATIVO ED EDUCATIVO.
 
 Il progetto è stato sviluppato per:
 
@@ -73,7 +73,7 @@ Qualsiasi utilizzo improprio dello strumento è di esclusiva responsabilità del
 ## 🇬🇧 ENGLISH
 ## IMPORTANT NOTICE
 
-This key calculation tool is provided EXCLUSIVELY FOR INFORMATIONAL AND EDUCATIONAL PURPOSES.
+This key calculation tool and firmware is provided EXCLUSIVELY FOR INFORMATIONAL AND EDUCATIONAL PURPOSES.
 
 The project was developed to:
 
