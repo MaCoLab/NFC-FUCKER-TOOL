@@ -49,8 +49,8 @@ interface ResultRow {
 }
 
 export default function ComesteroCalculator({ onBack }: { onBack: () => void }) {
-    const [uid, setUid] = useState('7B3A762B');
-    const [knownKey, setKnownKey] = useState('CFCBE0D81E5B');
+    const [uid, setUid] = useState('');
+    const [knownKey, setKnownKey] = useState('');
     const [keyType, setKeyType] = useState<'A' | 'B'>('B');
     const [sector, setSector] = useState(0);
     const [results, setResults] = useState<Record<number, ResultRow> | null>(null);
@@ -227,7 +227,7 @@ export default function ComesteroCalculator({ onBack }: { onBack: () => void }) 
                                     onChange={(e) => setUid(e.target.value.toUpperCase())}
                                     maxLength={8}
                                     className="w-full bg-[#020617] border border-cyan-800 py-2.5 px-4 text-cyan-300 placeholder-cyan-900 focus:outline-none focus:border-cyan-400 transition-all font-mono uppercase tracking-widest text-sm"
-                                    placeholder="7B3A762B"
+                                    placeholder="Inserisci UID"
                                 />
                             </div>
                             <div>
@@ -238,7 +238,7 @@ export default function ComesteroCalculator({ onBack }: { onBack: () => void }) 
                                     onChange={(e) => setKnownKey(e.target.value.toUpperCase())}
                                     maxLength={12}
                                     className="w-full bg-[#020617] border border-cyan-800 py-2.5 px-4 text-cyan-300 placeholder-cyan-900 focus:outline-none focus:border-cyan-400 transition-all font-mono uppercase tracking-widest text-sm"
-                                    placeholder="CFCBE0D81E5B"
+                                    placeholder="Inserisci chiave"
                                 />
                             </div>
                         </div>
