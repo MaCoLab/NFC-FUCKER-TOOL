@@ -1,7 +1,7 @@
 
 # NFC FUCKER TOOL // FLASHER
 
-Questa repo contiene una pagina web per flashare automaticamente il tuo ESP32-C3 con l'ultimo firmware stabile del NFC FUCKER usando **ESP Web Tools** e la **Web Serial API**, protetta da password.
+Questa repo contiene una web page con strumenti di calcolo e flasher automatico per il tuo ESP32-C3 con l'ultimo firmware stabile del NFC FUCKER usando **ESP Web Tools** e la **Web Serial API**, protetta da password.
 
 ## Browser supportati:
 
@@ -14,9 +14,9 @@ Questa repo contiene una pagina web per flashare automaticamente il tuo ESP32-C3
 
 ## Configurazione:
 
-In questa repo non troverete il progetto completo con i pinout da utilizzare o  i moduli impiegati, ma solo ed esclusivamente il firmware in formato binario. 
+In questa repo non troverete il progetto completo con i pinout da utilizzare o i moduli impiegati, ma solo ed esclusivamente il firmware in formato binario. 
 
-## Attenzione, la pagina è protetta da password
+## Attenzione, la web page è protetta da password
 
 La password per accedere all'interfaccia non è pubblica.
 
