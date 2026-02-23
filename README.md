@@ -1,5 +1,5 @@
 
-# NFC FUCKER TOOL // FLASHER
+# NFC FUCKER TOOL // FLASHER (INFO ED INFORMATIVA)
 
 Questa repo contiene una web page con strumenti di calcolo e flasher automatico per il tuo ESP32-C3 con l'ultimo firmware stabile del NFC FUCKER usando **ESP Web Tools** e la **Web Serial API**, protetta da password.
 
@@ -20,7 +20,7 @@ In questa repo non troverete il progetto completo con i pinout da utilizzare o i
 
 La password per accedere all'interfaccia non è pubblica.
 
-# AVVISO IMPORTANTE
+# AVVISO IMPORTANTE (INFORMATIVA)
 
 Questo strumento di calcolo delle chiavi è fornito ESCLUSIVAMENTE A SCOPO INFORMATIVO ED EDUCATIVO.
 
