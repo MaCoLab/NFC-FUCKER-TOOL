@@ -2,12 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Terminal, Cpu, ShieldAlert, Zap, Lock, Unlock, Activity, CheckCircle2, Server, Database, Wifi, HardDrive, Calculator } from 'lucide-react';
 import ComesteroCalculator from './components/ComesteroCalculator';
+import MicroelCalculator from './components/MicroelCalculator';
 
 const PASSWORD = "Maco2025";
 
 export default function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [activeView, setActiveView] = useState<'flasher' | 'calculator'>('flasher');
+  const [activeView, setActiveView] = useState<'flasher' | 'calculator' | 'calculator_microel'>('flasher');
   const [passwordInput, setPasswordInput] = useState('');
   const [error, setError] = useState('');
   const [firmware, setFirmware] = useState('senza');
@@ -180,6 +181,8 @@ export default function App() {
             </motion.div>
           ) : activeView === 'calculator' ? (
             <ComesteroCalculator onBack={() => setActiveView('flasher')} />
+          ) : activeView === 'calculator_microel' ? (
+            <MicroelCalculator onBack={() => setActiveView('flasher')} />
           ) : (
             <motion.div 
               key="dashboard"
@@ -209,6 +212,16 @@ export default function App() {
                   }`}
                 >
                   <Calculator size={14} /> Calcolo Comestero Key
+                </button>
+                <button 
+                  onClick={() => setActiveView('calculator_microel')}
+                  className={`px-6 py-3 border transition-all uppercase tracking-widest text-xs font-bold flex items-center gap-2 ${
+                    activeView === 'calculator_microel' 
+                    ? 'bg-cyan-500/20 border-cyan-500 text-cyan-300 shadow-[0_0_15px_rgba(6,182,212,0.3)]' 
+                    : 'bg-cyan-950/10 border-cyan-900/50 text-cyan-700 hover:border-cyan-700 hover:text-cyan-500'
+                  }`}
+                >
+                  <Calculator size={14} /> Calcolo Chiavi MICROEL
                 </button>
               </div>
 
