@@ -304,17 +304,25 @@ export default function App() {
                     <div className="space-y-5 font-mono">
                       <div className="relative pl-3 border-l border-cyan-500">
                         <div className="flex items-center justify-between mb-2">
-                          <h4 className="text-cyan-50 text-xs font-bold tracking-wider">&gt; V_1.3.3 release n.8 <span className="text-[10px] bg-cyan-500/20 text-cyan-300 px-1 py-0.5 ml-2 border border-cyan-500/30">STABILE</span></h4>
-                          <span className="text-[10px] text-cyan-600">21.02.2026</span>
+                          <h4 className="text-cyan-50 text-xs font-bold tracking-wider">&gt; V_1.3.4 release n.9 <span className="text-[10px] bg-cyan-500/20 text-cyan-300 px-1 py-0.5 ml-2 border border-cyan-500/30">STABILE</span></h4>
+                          <span className="text-[10px] text-cyan-600">24.02.2026</span>
                         </div>
                         <ul className="space-y-1.5 text-xs text-cyan-200/70">
                           <li className="flex items-start gap-2">
                             <span className="text-cyan-500">&gt;</span>
-                            <span>Aggiunta voce "About" nel menu</span>
+                            <span>Selezione e azzeramento credito MyKey</span>
                           </li>
                           <li className="flex items-start gap-2">
                             <span className="text-cyan-500">&gt;</span>
-                            <span>Nuovo WebFlasher</span>
+                            <span>Selezione credito Microel</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-cyan-500">&gt;</span>
+                            <span>Aggiunti calcolatori sulla web page del flasher</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-cyan-500">&gt;</span>
+                            <span>Ulteriori fix e correzioni del firmware</span>
                           </li>
                         </ul>
                       </div>
@@ -322,8 +330,8 @@ export default function App() {
                       <div className="relative pl-3 border-l border-cyan-900">
                         <h4 className="text-cyan-600 text-xs font-bold tracking-wider mb-2">&gt; PREV_VERSIONS</h4>
                         <ul className="grid grid-cols-1 gap-1.5 text-[10px] text-cyan-700">
-                          <li className="flex items-center gap-2"><span>-</span>Correzione "reset" delle microel</li>
-                          <li className="flex items-center gap-2"><span>-</span>Aggiunte nuove chiavi per utenti</li>
+                          <li className="flex items-center gap-2"><span>-</span>Nuovo web flasher</li>
+                          <li className="flex items-center gap-2"><span>-</span>Aggiunta voce "About"nel menu</li>
                           <li className="flex items-center gap-2"><span>-</span>Aggiunta selezione del credito per Comestero</li>
                           <li className="flex items-center gap-2"><span>-</span>Aggiunta funzione God Mode per Comestero</li>
                           <li className="flex items-center gap-2"><span>-</span>Nuovi Vendor MyKey </li>
@@ -384,7 +392,7 @@ export default function App() {
                           </div>
                           <div>
                             <span className={`font-bold tracking-widest uppercase block ${firmware === 'senza' ? 'text-cyan-50' : 'text-cyan-600'}`}>
-                              FW_NO_PASSWORD <span className="text-[10px] ml-2 opacity-50">v1.3.3</span>
+                              FW_NO_PASSWORD <span className="text-[10px] ml-2 opacity-50">v1.3.4</span>
                             </span>
                             <p className={`mt-1 text-xs ${firmware === 'senza' ? 'text-cyan-300' : 'text-cyan-800'}`}>
                               Versione standard senza password di accesso all'avvio.
@@ -419,7 +427,7 @@ export default function App() {
                           </div>
                           <div>
                             <span className={`font-bold tracking-widest uppercase block ${firmware === 'con' ? 'text-cyan-50' : 'text-cyan-600'}`}>
-                              FW_SICURO <span className="text-[10px] ml-2 opacity-50">v1.3.3</span>
+                              FW_SICURO <span className="text-[10px] ml-2 opacity-50">v1.3.4</span>
                             </span>
                             <p className={`mt-1 text-xs ${firmware === 'con' ? 'text-cyan-300' : 'text-cyan-800'}`}>
                               Versione protetta con password all'avvio (richiedere al produttore).
