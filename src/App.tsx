@@ -212,7 +212,7 @@ export default function App() {
                     : 'bg-cyan-950/10 border-cyan-900/50 text-cyan-700 hover:border-cyan-700 hover:text-cyan-500'
                   }`}
                 >
-                  <Calculator size={14} /> Calcolo Comestero Key
+                  <Calculator size={14} /> Calcolo Chiavi Com3st3r0
                 </button>
                 <button 
                   onClick={() => setActiveView('calculator_microel')}
@@ -222,7 +222,7 @@ export default function App() {
                     : 'bg-cyan-950/10 border-cyan-900/50 text-cyan-700 hover:border-cyan-700 hover:text-cyan-500'
                   }`}
                 >
-                  <Calculator size={14} /> Calcolo Chiavi MICROEL
+                  <Calculator size={14} /> Calcolo Chiavi M1cr03l
                 </button>
               </div>
 
